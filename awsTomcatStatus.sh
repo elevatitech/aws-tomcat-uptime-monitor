@@ -62,3 +62,4 @@ fi
 #echo AWS_METRIC_NAME $AWS_METRIC_NAME
 
 #push all data to CloudWatch
+aws cloudwatch put-metric-data --namespace "Monitoring" --metric-name $AWS_METRIC_NAME --value $AWS_VAL --unit Count --dimensions InstanceID=$EC2_INSTANCE_ID,"Instance Name"=$EC2_INSTANCE_NAME --region $EC2_REGION
