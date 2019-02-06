@@ -9,12 +9,14 @@ Prerequisite:
   * This script use *awscli* to push data to cloudwatch. *awscli* need to be installed.
   
 Usage:
-  * cd /opt && git clone https://github.com/elevatitech/aws-tomcat-uptime-monitor.git
-  * chmod +x /opt/aws-tomcat-uptime-monitor/awsTomcatStatus.sh
-  * run the command */opt/aws-tomcat-uptime-monitor/awsTomcatStatus.sh* manually to test data collection on the cloudwatch
+  * ```cd /opt && git clone https://github.com/elevatitech/aws-tomcat-uptime-monitor.git```
+  * ```chmod +x /opt/aws-tomcat-uptime-monitor/awsTomcatStatus.sh```
+  * run the command ```/opt/aws-tomcat-uptime-monitor/awsTomcatStatus.sh``` manually to test data collection on the cloudwatch
   * make a crontab entry, change cron interval as needed
-     #Tomcat Status monitor
+     ```
+     # Tomcat Status monitor
      */5 * * * * root /root/aws-scripts-mon/awsTomcatStatus.sh
+     ```
 
 Contact: 
   * neeraj@elevatitech.com
